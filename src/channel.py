@@ -9,10 +9,6 @@ load_dotenv()
 
 class Channel:
     api_key = os.getenv("YOU_API_KEY")
-    id_key = os.getenv("ID_KEY")
-
-    # youtube = build('youtube', 'v3', developerKey=api_key)
-    # channel = youtube.channels().list(id=id_key, part='snippet,statistics').execute()
 
     def __init__(self, channel_id: str):
         """Экземпляр инициализируется id канала. Дальше все данные будут подтягиваться по API."""
